@@ -5,7 +5,7 @@ int gcdExtended(int a, int b, int *x, int *y) {
     // Initialize the table header
     cout << "Step   a   b   q   r   x   y" << endl;
 
-    int x1, y1;  // To store results of recursive call
+    int x1=0, y1=1;  // To store results of recursive call
     int step = 1; // Initialize step counter
     int gcd;
 
@@ -30,7 +30,7 @@ int gcdExtended(int a, int b, int *x, int *y) {
 }
 
 int main() {
-    int x, y, a = 161, b = 28;
+    int x=0, y=1, a = 28, b = 161;
     cout<<"Two inputs are : "<<a<<" "<<b<<"\n";
     int g = gcdExtended(a, b, &x, &y);
     cout << "GCD(" << a << ", " << b << ") = " << g << endl;
